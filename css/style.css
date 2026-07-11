@@ -1,0 +1,220 @@
+/*
+	Desenvolvido pela equipe do Mochila Cheia
+*/
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+} 
+@font-face {
+  font-family: 'RobotoThin';
+  src: url('../fonts/Roboto-Thin.ttf') format('truetype');
+} 
+@font-face {
+  font-family: 'RobotoBold';
+  src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+/* ---------------------- Definindo valores padrão caso não sejam ajustados -------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'RobotoRegular';
+    color: white;
+}
+
+/* ------------------- Ajustes basicos --------------------- */
+.margin-left-24 {
+	margin-left: 24px;
+}
+
+.container-white {	
+	color: black;
+    background-color: white;
+}
+
+.container-purple {	
+	color: white;
+    background-color: #B5A0D8;
+}
+
+.container-blue {
+	color: white;
+    background-color: #b0ceff;
+}
+
+.container-pink {
+	color: white;
+    background-color: #ffbdd8;
+}
+
+.main-wrapper {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.alignment-space-between {	
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------- Cabeçalho ---------------------- */
+.logo-mochila-cheia {
+    font-size: 28px;
+    letter-spacing: -0.5px;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	color: white;
+	box-sizing: border-box;
+    justify-content: space-between;
+	
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 48px;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 15px;
+	font-family: RobotoBold;
+    transition: opacity 0.2s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+/* ----------------------- Seções centrais da pagina ---------------------  */
+.upper-section {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    padding-left: 48px;
+    position: relative;
+}
+
+.upper-section-content {
+    max-width: 50%;
+    position: relative;
+    margin-top: -50px;
+}
+
+.upper-section-content h1 {
+    font-size: 4.5rem;
+    line-height: 1.05;
+    margin-bottom: 24px;
+    letter-spacing: -1px;
+}
+
+.upper-section-content p {
+    font-size: 12px;
+	font-family: RobotoBold;
+    margin-bottom: 12px;
+}
+
+.center-section {
+	height: 720px;
+    padding: 80px 48px;
+    text-align: center;
+}
+
+.center-section h2 {
+    font-size: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ----------------------- Rodape ---------------------  */
+footer {
+	color: white;
+	background-color: black;
+	height: 110px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ----------------------- Componentes basicos ---------------------  */
+.logo {
+    font-size: 48px;
+	font-family: RobotoThin;
+}
+
+.qr-code {
+    background-color: white;
+    padding: 8px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.qr-code img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    object-fit: cover;
+    background-color: #eaeaea;
+}
+
+.align-horizontal {
+    display: flex;
+    gap: 12px;
+}
+
+.align-horizontal button {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+	font-family: RobotoBold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.align-horizontal button:hover {
+    transform: scale(1.05);
+}
+
+.button-dark {
+    background-color: #111111;
+}
+
+.button-light {
+    background-color: #ffffff;
+    color: #111111;
+}
+
+.h2-white {
+    color: white;
+    font-size: 3rem;
+	font-family: RobotoThin;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.h2-black {
+    color: #242424;
+	font-family: RobotoThin;
+    font-size: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
