@@ -1,7 +1,7 @@
 # mochila-cheia-web
 Um projeto para as atividades da disciplina de Desenvolvimento para Web. 
 
-#Integrantes:
+# Integrantes:
 Rodrigo Lima Diôgo                  2025014780<br>
 Júlio César Batista da Silva        2025014645<br>
 Francisco Robson Paulino Cruz       2025014458<br>
